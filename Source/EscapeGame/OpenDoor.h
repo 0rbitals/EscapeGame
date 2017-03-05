@@ -21,6 +21,7 @@ protected:
 
 	void OpenDoor();
 	void CloseDoor();
+	float GetTotalMassOfActorsOnPlate();
 
 public:	
 	// Called every frame
@@ -39,6 +40,10 @@ private:
 	float DoorCloseDelay = 1.f;
 
 	float LastDoorOpenTime;
+
+	UPrimitiveComponent* PrimitiveComponent = nullptr;
+
+	float CurrentActorMass = 0.f;
 
 	AActor* ActorThatOpens;
 	AActor* Owner;

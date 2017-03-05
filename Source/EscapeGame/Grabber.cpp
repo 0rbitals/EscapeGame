@@ -1,4 +1,3 @@
-
 #include "EscapeGame.h"
 #include "Grabber.h"
 
